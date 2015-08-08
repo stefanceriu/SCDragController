@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1872E9D91B75D28100FC25F5 /* SCCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872E9D81B75D28100FC25F5 /* SCCollectionViewCell.m */; };
+		1872E9DB1B75D28F00FC25F5 /* SCCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1872E9DA1B75D28F00FC25F5 /* SCCollectionViewCell.xib */; };
+		1872E9DF1B76394C00FC25F5 /* SCDragController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872E9DE1B76394C00FC25F5 /* SCDragController.m */; };
+		18D20D341B75D0B0000CBC28 /* SCRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D20D331B75D0B0000CBC28 /* SCRootViewController.xib */; };
+		18E368201B75CF0F00E8615B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3681F1B75CF0F00E8615B /* main.m */; };
+		18E368231B75CF0F00E8615B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E368221B75CF0F00E8615B /* AppDelegate.m */; };
+		18E368261B75CF0F00E8615B /* SCRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E368251B75CF0F00E8615B /* SCRootViewController.m */; };
+		18E3682E1B75CF0F00E8615B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E3682C1B75CF0F00E8615B /* LaunchScreen.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1872E9D71B75D28100FC25F5 /* SCCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCollectionViewCell.h; sourceTree = "<group>"; };
+		1872E9D81B75D28100FC25F5 /* SCCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCollectionViewCell.m; sourceTree = "<group>"; };
+		1872E9DA1B75D28F00FC25F5 /* SCCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCCollectionViewCell.xib; sourceTree = "<group>"; };
+		1872E9DD1B76394C00FC25F5 /* SCDragController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCDragController.h; sourceTree = "<group>"; };
+		1872E9DE1B76394C00FC25F5 /* SCDragController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCDragController.m; sourceTree = "<group>"; };
+		18D20D331B75D0B0000CBC28 /* SCRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCRootViewController.xib; sourceTree = "<group>"; };
+		18E3681A1B75CF0F00E8615B /* SCDragController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCDragController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E3681E1B75CF0F00E8615B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E3681F1B75CF0F00E8615B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18E368211B75CF0F00E8615B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18E368221B75CF0F00E8615B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18E368241B75CF0F00E8615B /* SCRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCRootViewController.h; sourceTree = "<group>"; };
+		18E368251B75CF0F00E8615B /* SCRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCRootViewController.m; sourceTree = "<group>"; };
+		18E3682D1B75CF0F00E8615B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18E368171B75CF0F00E8615B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1872E9DC1B76394C00FC25F5 /* SCDragController */ = {
+			isa = PBXGroup;
+			children = (
+				1872E9DD1B76394C00FC25F5 /* SCDragController.h */,
+				1872E9DE1B76394C00FC25F5 /* SCDragController.m */,
+			);
+			name = SCDragController;
+			path = ../SCDragController;
+			sourceTree = "<group>";
+		};
+		18E368111B75CF0F00E8615B = {
+			isa = PBXGroup;
+			children = (
+				1872E9DC1B76394C00FC25F5 /* SCDragController */,
+				18E3681C1B75CF0F00E8615B /* Demo */,
+				18E3681B1B75CF0F00E8615B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18E3681B1B75CF0F00E8615B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18E3681A1B75CF0F00E8615B /* SCDragController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18E3681C1B75CF0F00E8615B /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				18E368211B75CF0F00E8615B /* AppDelegate.h */,
+				18E368221B75CF0F00E8615B /* AppDelegate.m */,
+				18E368241B75CF0F00E8615B /* SCRootViewController.h */,
+				18E368251B75CF0F00E8615B /* SCRootViewController.m */,
+				18D20D331B75D0B0000CBC28 /* SCRootViewController.xib */,
+				1872E9D71B75D28100FC25F5 /* SCCollectionViewCell.h */,
+				1872E9D81B75D28100FC25F5 /* SCCollectionViewCell.m */,
+				1872E9DA1B75D28F00FC25F5 /* SCCollectionViewCell.xib */,
+				18E3681D1B75CF0F00E8615B /* Supporting Files */,
+			);
+			name = Demo;
+			path = SCDragController;
+			sourceTree = "<group>";
+		};
+		18E3681D1B75CF0F00E8615B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18E3682C1B75CF0F00E8615B /* LaunchScreen.xib */,
+				18E3681E1B75CF0F00E8615B /* Info.plist */,
+				18E3681F1B75CF0F00E8615B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18E368191B75CF0F00E8615B /* SCDragController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E3683D1B75CF0F00E8615B /* Build configuration list for PBXNativeTarget "SCDragController" */;
+			buildPhases = (
+				18E368161B75CF0F00E8615B /* Sources */,
+				18E368171B75CF0F00E8615B /* Frameworks */,
+				18E368181B75CF0F00E8615B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCDragController;
+			productName = SCDragController;
+			productReference = 18E3681A1B75CF0F00E8615B /* SCDragController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18E368121B75CF0F00E8615B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Stefan Ceriu";
+				TargetAttributes = {
+					18E368191B75CF0F00E8615B = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 18E368151B75CF0F00E8615B /* Build configuration list for PBXProject "SCDragController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18E368111B75CF0F00E8615B;
+			productRefGroup = 18E3681B1B75CF0F00E8615B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18E368191B75CF0F00E8615B /* SCDragController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18E368181B75CF0F00E8615B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1872E9DB1B75D28F00FC25F5 /* SCCollectionViewCell.xib in Resources */,
+				18D20D341B75D0B0000CBC28 /* SCRootViewController.xib in Resources */,
+				18E3682E1B75CF0F00E8615B /* LaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18E368161B75CF0F00E8615B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E368261B75CF0F00E8615B /* SCRootViewController.m in Sources */,
+				1872E9D91B75D28100FC25F5 /* SCCollectionViewCell.m in Sources */,
+				1872E9DF1B76394C00FC25F5 /* SCDragController.m in Sources */,
+				18E368231B75CF0F00E8615B /* AppDelegate.m in Sources */,
+				18E368201B75CF0F00E8615B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18E3682C1B75CF0F00E8615B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18E3682D1B75CF0F00E8615B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18E3683B1B75CF0F00E8615B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18E3683C1B75CF0F00E8615B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18E3683E1B75CF0F00E8615B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SCDragController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		18E3683F1B75CF0F00E8615B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SCDragController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18E368151B75CF0F00E8615B /* Build configuration list for PBXProject "SCDragController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E3683B1B75CF0F00E8615B /* Debug */,
+				18E3683C1B75CF0F00E8615B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18E3683D1B75CF0F00E8615B /* Build configuration list for PBXNativeTarget "SCDragController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E3683E1B75CF0F00E8615B /* Debug */,
+				18E3683F1B75CF0F00E8615B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18E368121B75CF0F00E8615B /* Project object */;
+}
