@@ -9,20 +9,19 @@
 /* Begin PBXBuildFile section */
 		1872E9D91B75D28100FC25F5 /* SCCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872E9D81B75D28100FC25F5 /* SCCollectionViewCell.m */; };
 		1872E9DB1B75D28F00FC25F5 /* SCCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1872E9DA1B75D28F00FC25F5 /* SCCollectionViewCell.xib */; };
-		1872E9DF1B76394C00FC25F5 /* SCDragController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872E9DE1B76394C00FC25F5 /* SCDragController.m */; };
 		18D20D341B75D0B0000CBC28 /* SCRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D20D331B75D0B0000CBC28 /* SCRootViewController.xib */; };
 		18E368201B75CF0F00E8615B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3681F1B75CF0F00E8615B /* main.m */; };
 		18E368231B75CF0F00E8615B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E368221B75CF0F00E8615B /* AppDelegate.m */; };
 		18E368261B75CF0F00E8615B /* SCRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E368251B75CF0F00E8615B /* SCRootViewController.m */; };
 		18E3682E1B75CF0F00E8615B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E3682C1B75CF0F00E8615B /* LaunchScreen.xib */; };
+		2E39313A2EE5C10436FC02FE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC58441CED15D50D86680892 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		008772C46CEDB8ED50338BEB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		1872E9D71B75D28100FC25F5 /* SCCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCollectionViewCell.h; sourceTree = "<group>"; };
 		1872E9D81B75D28100FC25F5 /* SCCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCollectionViewCell.m; sourceTree = "<group>"; };
 		1872E9DA1B75D28F00FC25F5 /* SCCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCCollectionViewCell.xib; sourceTree = "<group>"; };
-		1872E9DD1B76394C00FC25F5 /* SCDragController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCDragController.h; sourceTree = "<group>"; };
-		1872E9DE1B76394C00FC25F5 /* SCDragController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCDragController.m; sourceTree = "<group>"; };
 		18D20D331B75D0B0000CBC28 /* SCRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCRootViewController.xib; sourceTree = "<group>"; };
 		18E3681A1B75CF0F00E8615B /* SCDragController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCDragController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E3681E1B75CF0F00E8615B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -32,6 +31,8 @@
 		18E368241B75CF0F00E8615B /* SCRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCRootViewController.h; sourceTree = "<group>"; };
 		18E368251B75CF0F00E8615B /* SCRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCRootViewController.m; sourceTree = "<group>"; };
 		18E3682D1B75CF0F00E8615B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7794F4F6E3AD7D3A37FE515B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		EC58441CED15D50D86680892 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,28 +40,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E39313A2EE5C10436FC02FE /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1872E9DC1B76394C00FC25F5 /* SCDragController */ = {
-			isa = PBXGroup;
-			children = (
-				1872E9DD1B76394C00FC25F5 /* SCDragController.h */,
-				1872E9DE1B76394C00FC25F5 /* SCDragController.m */,
-			);
-			name = SCDragController;
-			path = ../SCDragController;
-			sourceTree = "<group>";
-		};
 		18E368111B75CF0F00E8615B = {
 			isa = PBXGroup;
 			children = (
-				1872E9DC1B76394C00FC25F5 /* SCDragController */,
 				18E3681C1B75CF0F00E8615B /* Demo */,
 				18E3681B1B75CF0F00E8615B /* Products */,
+				263D356B5585AC1E13CE3738 /* Pods */,
+				DB9BBF5ADE9D4E3D8D352F7B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +92,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		263D356B5585AC1E13CE3738 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7794F4F6E3AD7D3A37FE515B /* Pods.debug.xcconfig */,
+				008772C46CEDB8ED50338BEB /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB9BBF5ADE9D4E3D8D352F7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC58441CED15D50D86680892 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +116,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18E3683D1B75CF0F00E8615B /* Build configuration list for PBXNativeTarget "SCDragController" */;
 			buildPhases = (
+				9E4957484D4170A3981C3E37 /* Check Pods Manifest.lock */,
 				18E368161B75CF0F00E8615B /* Sources */,
 				18E368171B75CF0F00E8615B /* Frameworks */,
 				18E368181B75CF0F00E8615B /* Resources */,
+				34CC90B0276AEC18DF3B978A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,6 +176,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		34CC90B0276AEC18DF3B978A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E4957484D4170A3981C3E37 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18E368161B75CF0F00E8615B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -171,7 +216,6 @@
 			files = (
 				18E368261B75CF0F00E8615B /* SCRootViewController.m in Sources */,
 				1872E9D91B75D28100FC25F5 /* SCCollectionViewCell.m in Sources */,
-				1872E9DF1B76394C00FC25F5 /* SCDragController.m in Sources */,
 				18E368231B75CF0F00E8615B /* AppDelegate.m in Sources */,
 				18E368201B75CF0F00E8615B /* main.m in Sources */,
 			);
@@ -275,9 +319,11 @@
 		};
 		18E3683E1B75CF0F00E8615B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7794F4F6E3AD7D3A37FE515B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SCDragController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -285,9 +331,11 @@
 		};
 		18E3683F1B75CF0F00E8615B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 008772C46CEDB8ED50338BEB /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SCDragController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
