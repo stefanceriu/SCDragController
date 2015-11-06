@@ -27,6 +27,11 @@
 
 @implementation SCDragController
 
+- (void)dealloc
+{
+    [self.view removeGestureRecognizer:self.longPressGesture];
+}
+
 - (instancetype)initWithView:(UIView *)view
 {
 	if(self = [super init]) {
@@ -232,11 +237,11 @@
 							   }];
 		}
 		
-		if([self.delegate respondsToSelector:@selector(dragController:didCancelDragAtPosition:dragStartPosition:)]) {
-			[self.delegate dragController:self didCancelDragAtPosition:position dragStartPosition:self.currentDragStartPosition];
-		}
-		
 		dispatch_group_notify(dispatchGroup, dispatch_get_main_queue(), ^{
+            
+            if([self.delegate respondsToSelector:@selector(dragController:didCancelDragAtPosition:dragStartPosition:)]) {
+                [self.delegate dragController:self didCancelDragAtPosition:position dragStartPosition:self.currentDragStartPosition];
+            }
 			
 			[self.draggedView removeFromSuperview];
 			self.draggedView = nil;
