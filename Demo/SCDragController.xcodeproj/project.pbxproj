@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180D4A2C1ECDAF3A000765D4 /* libPods-SCDragController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 180D4A2B1ECDAF3A000765D4 /* libPods-SCDragController.a */; };
 		1872E9D91B75D28100FC25F5 /* SCCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872E9D81B75D28100FC25F5 /* SCCollectionViewCell.m */; };
 		1872E9DB1B75D28F00FC25F5 /* SCCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1872E9DA1B75D28F00FC25F5 /* SCCollectionViewCell.xib */; };
 		18D20D341B75D0B0000CBC28 /* SCRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D20D331B75D0B0000CBC28 /* SCRootViewController.xib */; };
@@ -14,11 +15,12 @@
 		18E368231B75CF0F00E8615B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E368221B75CF0F00E8615B /* AppDelegate.m */; };
 		18E368261B75CF0F00E8615B /* SCRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E368251B75CF0F00E8615B /* SCRootViewController.m */; };
 		18E3682E1B75CF0F00E8615B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E3682C1B75CF0F00E8615B /* LaunchScreen.xib */; };
-		2E39313A2EE5C10436FC02FE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC58441CED15D50D86680892 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		008772C46CEDB8ED50338BEB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		10D30FF7DCFF4B6F003F8A0B /* libPods-SCDragController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SCDragController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		180D4A2B1ECDAF3A000765D4 /* libPods-SCDragController.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-SCDragController.a"; path = "../../../../Library/Developer/Xcode/DerivedData/SCDragController-floakxmzyvfgyofocnrqyuzzyezp/Build/Products/Debug-iphonesimulator/libPods-SCDragController.a"; sourceTree = "<group>"; };
 		1872E9D71B75D28100FC25F5 /* SCCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCollectionViewCell.h; sourceTree = "<group>"; };
 		1872E9D81B75D28100FC25F5 /* SCCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCollectionViewCell.m; sourceTree = "<group>"; };
 		1872E9DA1B75D28F00FC25F5 /* SCCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -32,6 +34,8 @@
 		18E368251B75CF0F00E8615B /* SCRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCRootViewController.m; sourceTree = "<group>"; };
 		18E3682D1B75CF0F00E8615B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		7794F4F6E3AD7D3A37FE515B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		785CB995AA03A7FDC11D4C06 /* Pods-SCDragController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCDragController.release.xcconfig"; path = "Pods/Target Support Files/Pods-SCDragController/Pods-SCDragController.release.xcconfig"; sourceTree = "<group>"; };
+		B7D60B4A347DD1C33F6AEF25 /* Pods-SCDragController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCDragController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SCDragController/Pods-SCDragController.debug.xcconfig"; sourceTree = "<group>"; };
 		EC58441CED15D50D86680892 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -40,7 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E39313A2EE5C10436FC02FE /* libPods.a in Frameworks */,
+				180D4A2C1ECDAF3A000765D4 /* libPods-SCDragController.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +101,8 @@
 			children = (
 				7794F4F6E3AD7D3A37FE515B /* Pods.debug.xcconfig */,
 				008772C46CEDB8ED50338BEB /* Pods.release.xcconfig */,
+				B7D60B4A347DD1C33F6AEF25 /* Pods-SCDragController.debug.xcconfig */,
+				785CB995AA03A7FDC11D4C06 /* Pods-SCDragController.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -104,7 +110,9 @@
 		DB9BBF5ADE9D4E3D8D352F7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				180D4A2B1ECDAF3A000765D4 /* libPods-SCDragController.a */,
 				EC58441CED15D50D86680892 /* libPods.a */,
+				10D30FF7DCFF4B6F003F8A0B /* libPods-SCDragController.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,11 +124,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18E3683D1B75CF0F00E8615B /* Build configuration list for PBXNativeTarget "SCDragController" */;
 			buildPhases = (
-				9E4957484D4170A3981C3E37 /* Check Pods Manifest.lock */,
+				9E4957484D4170A3981C3E37 /* [CP] Check Pods Manifest.lock */,
 				18E368161B75CF0F00E8615B /* Sources */,
 				18E368171B75CF0F00E8615B /* Frameworks */,
 				18E368181B75CF0F00E8615B /* Resources */,
-				34CC90B0276AEC18DF3B978A /* Copy Pods Resources */,
+				34CC90B0276AEC18DF3B978A /* [CP] Copy Pods Resources */,
+				7ABF0AB98E66992AF6D83820 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -177,34 +186,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		34CC90B0276AEC18DF3B978A /* Copy Pods Resources */ = {
+		34CC90B0276AEC18DF3B978A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SCDragController/Pods-SCDragController-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9E4957484D4170A3981C3E37 /* Check Pods Manifest.lock */ = {
+		7ABF0AB98E66992AF6D83820 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SCDragController/Pods-SCDragController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E4957484D4170A3981C3E37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -319,7 +343,7 @@
 		};
 		18E3683E1B75CF0F00E8615B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7794F4F6E3AD7D3A37FE515B /* Pods.debug.xcconfig */;
+			baseConfigurationReference = B7D60B4A347DD1C33F6AEF25 /* Pods-SCDragController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SCDragController/Info.plist;
@@ -331,7 +355,7 @@
 		};
 		18E3683F1B75CF0F00E8615B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 008772C46CEDB8ED50338BEB /* Pods.release.xcconfig */;
+			baseConfigurationReference = 785CB995AA03A7FDC11D4C06 /* Pods-SCDragController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SCDragController/Info.plist;
