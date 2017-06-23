@@ -262,7 +262,7 @@
 
 - (UIView *)_destinationAtPosition:(CGPoint)position
 {
-    for(UIView *destination in self.dragSources) {
+    for(UIView *destination in self.dragDestinations) {
         CGRect frame = [self.view convertRect:destination.frame fromView:destination.superview];
         if(CGRectContainsPoint(frame, position)) {
             return destination;
