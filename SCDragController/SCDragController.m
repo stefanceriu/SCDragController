@@ -13,8 +13,8 @@
 @property (nonatomic, strong) UIView *view;
 @property (nonatomic, strong) UILongPressGestureRecognizer *longPressGesture;
 
-@property (nonatomic, strong) NSMutableSet *dragSources;
-@property (nonatomic, strong) NSMutableSet *dragDestinations;
+@property (nonatomic, strong) NSMutableOrderedSet *dragSources;
+@property (nonatomic, strong) NSMutableOrderedSet *dragDestinations;
 
 @property (nonatomic, strong) UIView *draggedView;
 @property (nonatomic, strong) id currentDragMetadata;
@@ -42,8 +42,8 @@
         [_longPressGesture setMinimumPressDuration:0.1f];
         [_view addGestureRecognizer:_longPressGesture];
         
-        _dragSources = [NSMutableSet set];
-        _dragDestinations = [NSMutableSet set];
+        _dragSources = [NSMutableOrderedSet orderedSet];
+        _dragDestinations = [NSMutableOrderedSet orderedSet];
     }
     
     return self;
@@ -188,7 +188,16 @@
 
 - (void)_endDragAtPosition:(CGPoint)position
 {
-    if(self.currentDragDestination) {
+    BOOL shouldFinishDrag = (self.currentDragDestination != nil);
+    if([self.delegate respondsToSelector:@selector(dragController:shouldFinishDragAtPosition:source:destination:metadata:)]) {
+        shouldFinishDrag = shouldFinishDrag && [self.delegate dragController:self
+                                                  shouldFinishDragAtPosition:position
+                                                                      source:self.currentDragSource
+                                                                 destination:self.currentDragDestination
+                                                                    metadata:self.currentDragMetadata];
+    }
+    
+    if(shouldFinishDrag) {
         if([self.delegate respondsToSelector:@selector(dragController:willFinishDragAtPosition:)]) {
             [self.delegate dragController:self willFinishDragAtPosition:position];
         }

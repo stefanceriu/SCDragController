@@ -79,6 +79,10 @@
 - (void)dragController:(SCDragController *)dragController dragDidLeaveDestination:(UIView *)destination position:(CGPoint)position;
 
 
+- (BOOL)dragController:(SCDragController *)dragController shouldFinishDragAtPosition:(CGPoint)position
+                source:(UIView *)source
+           destination:(UIView *)destination
+              metadata:(id)metadata;
 
 - (void)dragController:(SCDragController *)dragController willFinishDragAtPosition:(CGPoint)position;
 
