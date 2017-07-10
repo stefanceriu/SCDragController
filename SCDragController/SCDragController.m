@@ -53,6 +53,10 @@
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
 {
+    if(self.longPressGesture.state != UIGestureRecognizerStatePossible) {
+        return NO;
+    }
+    
     CGPoint position = [touch locationInView:self.view];
     
     UIView *source = [self _sourceAtPosition:position];
