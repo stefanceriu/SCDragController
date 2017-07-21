@@ -23,6 +23,8 @@
 
 @property (nonatomic, assign) CGPoint currentDragStartPosition;
 
+@property (nonatomic, assign) BOOL isDragOngoing;
+
 @end
 
 @implementation SCDragController
@@ -53,7 +55,7 @@
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
 {
-    if(self.longPressGesture.state != UIGestureRecognizerStatePossible) {
+    if(self.isDragOngoing) {
         return NO;
     }
     
@@ -105,6 +107,8 @@
 
 - (void)_startDragAtPosition:(CGPoint)position
 {
+    self.isDragOngoing = YES;
+    
     self.currentDragStartPosition = position;
     
     if([self.dataSource respondsToSelector:@selector(dragController:dragViewForPosition:source:)]) {
@@ -217,6 +221,8 @@
                 self.currentDragMetadata = nil;
                 self.currentDragSource = nil;
                 self.currentDragDestination = nil;
+                
+                self.isDragOngoing = NO;
             });
         };
         
@@ -246,6 +252,8 @@
                 self.currentDragMetadata = nil;
                 self.currentDragSource = nil;
                 self.currentDragDestination = nil;
+                
+                self.isDragOngoing = NO;
             });
         };
         
