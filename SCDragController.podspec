@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'SCDragController'
-  s.version  = '1.2.2'
+  s.version  = '1.2.3'
   s.platform = :ios
   s.ios.deployment_target = '8.0'
 

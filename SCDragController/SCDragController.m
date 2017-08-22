@@ -119,6 +119,8 @@
     
     [self.view addSubview:self.draggedView];
     
+    [self.draggedView setCenter:position];
+    
     if([self.dataSource respondsToSelector:@selector(dragController:dragMetadataForPosition:source:)]) {
         self.currentDragMetadata = [self.dataSource dragController:self dragMetadataForPosition:position source:self.currentDragSource];
     }
@@ -129,10 +131,10 @@
     
     void(^startDrag)() = ^{
         if([self.delegate respondsToSelector:@selector(dragController:didStartDragAtPosition:)]) {
-            [self.delegate dragController:self didStartDragAtPosition:position];
+            [self.delegate dragController:self didStartDragAtPosition:self.draggedView.center];
         }
         
-        [self _updateDragWithPosition:position];
+        [self _updateDragWithPosition:self.draggedView.center];
     };
     
     if([self.delegate respondsToSelector:@selector(dragController:animateDragStartForView:position:completion:)]) {

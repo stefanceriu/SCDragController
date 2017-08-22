@@ -25,6 +25,8 @@
 @property (nonatomic, weak, readonly) UIView *currentDragSource;
 @property (nonatomic, weak, readonly) UIView *currentDragDestination;
 
+@property (nonatomic, assign, readonly) CGPoint currentDragStartPosition;
+
 @property (nonatomic, readonly) NSSet *sources;
 @property (nonatomic, readonly) NSSet *destinations;
 
