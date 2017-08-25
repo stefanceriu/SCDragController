@@ -119,8 +119,6 @@
     
     [self.view addSubview:self.draggedView];
     
-    [self.draggedView setCenter:position];
-    
     if([self.dataSource respondsToSelector:@selector(dragController:dragMetadataForPosition:source:)]) {
         self.currentDragMetadata = [self.dataSource dragController:self dragMetadataForPosition:position source:self.currentDragSource];
     }
