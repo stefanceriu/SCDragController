@@ -51,6 +51,20 @@
     return self;
 }
 
+- (void)cancelCurrentDrag
+{
+    if(!self.isDragOngoing) {
+        return;
+    }
+    
+    [self.longPressGesture removeTarget:self action:@selector(_onLongPress:)];
+    [self.longPressGesture setEnabled:NO];
+    [self.longPressGesture setEnabled:YES];
+    [self.longPressGesture addTarget:self action:@selector(_onLongPress:)];
+    
+    [self _endDragAtPosition:[self.longPressGesture locationInView:self.view] forceCancellation:YES];
+}
+
 #pragma mark - UIGestureRecognizerDelegate
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
@@ -96,7 +110,7 @@
         }
         case UIGestureRecognizerStateEnded:
         case UIGestureRecognizerStateCancelled: {
-            [self _endDragAtPosition:position];
+            [self _endDragAtPosition:position forceCancellation:NO];
             break;
         }
         default: {
@@ -194,10 +208,10 @@
     }
 }
 
-- (void)_endDragAtPosition:(CGPoint)position
+- (void)_endDragAtPosition:(CGPoint)position forceCancellation:(BOOL)forceCancellation
 {
-    BOOL shouldFinishDrag = (self.currentDragDestination != nil);
-    if([self.delegate respondsToSelector:@selector(dragController:shouldFinishDragAtPosition:source:destination:metadata:)]) {
+    BOOL shouldFinishDrag = !forceCancellation && (self.currentDragDestination != nil);
+    if(!forceCancellation && [self.delegate respondsToSelector:@selector(dragController:shouldFinishDragAtPosition:source:destination:metadata:)]) {
         shouldFinishDrag = shouldFinishDrag && [self.delegate dragController:self
                                                   shouldFinishDragAtPosition:position
                                                                       source:self.currentDragSource
@@ -257,7 +271,7 @@
             });
         };
         
-        if([self.delegate respondsToSelector:@selector(dragController:animateDragCancelForView:position:dragStartPosition:completion:)]) {
+        if(!forceCancellation && [self.delegate respondsToSelector:@selector(dragController:animateDragCancelForView:position:dragStartPosition:completion:)]) {
             [self.delegate dragController:self
                  animateDragCancelForView:self.draggedView
                                  position:position

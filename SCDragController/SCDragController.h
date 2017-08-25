@@ -40,6 +40,8 @@
 - (void)deregisterDestination:(UIView *)destination;
 - (void)deregisterAllDestinations;
 
+- (void)cancelCurrentDrag;
+
 @end
 
 
