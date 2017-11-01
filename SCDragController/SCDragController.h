@@ -66,7 +66,7 @@
 
 - (void)dragController:(SCDragController *)dragController animateDragStartForView:(UIView *)dragView
 			  position:(CGPoint)position
-			completion:(void(^)())completion;
+			completion:(void(^)(void))completion;
 
 - (void)dragController:(SCDragController *)dragController didStartDragAtPosition:(CGPoint)position;
 
@@ -92,7 +92,7 @@
 
 - (void)dragController:(SCDragController *)dragController animateDragFinishForView:(UIView *)dragView
 			  position:(CGPoint)position
-			completion:(void(^)())completion;
+			completion:(void(^)(void))completion;
 
 - (void)dragController:(SCDragController *)dragController didFinishDragAtPosition:(CGPoint)position
 				source:(UIView *)source
@@ -107,7 +107,7 @@
 - (void)dragController:(SCDragController *)dragController animateDragCancelForView:(UIView *)dragView
 			  position:(CGPoint)position
 	 dragStartPosition:(CGPoint)dragStartPosition
-			completion:(void(^)())completion;
+			completion:(void(^)(void))completion;
 
 - (void)dragController:(SCDragController *)dragController didCancelDragAtPosition:(CGPoint)position dragStartPosition:(CGPoint)dragStartPosition;
 

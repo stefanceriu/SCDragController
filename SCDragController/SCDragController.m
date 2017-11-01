@@ -141,7 +141,7 @@
         [self.delegate dragController:self willStartDragAtPosition:position];
     }
     
-    void(^startDrag)() = ^{
+    void(^startDrag)(void) = ^{
         if([self.delegate respondsToSelector:@selector(dragController:didStartDragAtPosition:)]) {
             [self.delegate dragController:self didStartDragAtPosition:self.draggedView.center];
         }
@@ -224,7 +224,7 @@
             [self.delegate dragController:self willFinishDragAtPosition:position];
         }
         
-        void(^finishDrag)() = ^{
+        void(^finishDrag)(void) = ^{
             dispatch_async(dispatch_get_main_queue(), ^{
                 if([self.delegate respondsToSelector:@selector(dragController:didFinishDragAtPosition:source:destination:metadata:)]) {
                     [self.delegate dragController:self didFinishDragAtPosition:position source:self.currentDragSource destination:self.currentDragDestination metadata:self.currentDragMetadata];
@@ -255,7 +255,7 @@
             [self.delegate dragController:self willCancelDragAtPosition:position dragStartPosition:self.currentDragStartPosition];
         }
         
-        void(^cancelDrag)() = ^{
+        void(^cancelDrag)(void) = ^{
             dispatch_async(dispatch_get_main_queue(), ^{
                 if([self.delegate respondsToSelector:@selector(dragController:didCancelDragAtPosition:dragStartPosition:)]) {
                     [self.delegate dragController:self didCancelDragAtPosition:position dragStartPosition:self.currentDragStartPosition];
