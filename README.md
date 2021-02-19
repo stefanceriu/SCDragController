@@ -3,7 +3,7 @@
 SCDragController is a component meant to aid the development of drag & drop behaviors.
 
 #### Demo
-![SCDragController](https://drive.google.com/uc?export=download&id=0ByLCkUO90ltobFB1ZU11am5uSEE)
+![SCDragController](https://drive.google.com/u/0/uc?id=1wbECywiJTiOVcpbQ43afn3RTtQ-K5C5W&export=download)
 
 ### License
 SCDragController is released under the MIT License (MIT) (see the LICENSE file)
